@@ -1,23 +1,20 @@
 import React from 'react'
-import { StyleSheet, View, BackHandler} from 'react-native'
-import {Button} from '@material-ui/core';
+import { StyleSheet, View, BackHandler,Button} from 'react-native'
 
 
 
 const HomeScreen = ({navigation}) => {
     return (
         <View>
-            <Button onClick={()=>navigation.navigate('Learn')} >
-                learn
-            </Button>
-
-            <Button onClick={()=>navigation.navigate('Play')} >
-                Play
-            </Button>
+            <Button onPress={()=>navigation.navigate('Learn')} title='learn'/>
             
-            <Button onPress= {() => BackHandler.exitApp()} >
-                Exit
-            </Button>
+        
+
+            <Button onPress={()=>navigation.navigate('Play')} title='play' />
+                
+            
+            <Button onPress= {() => BackHandler.exitApp()} title='exit'/>
+       
             
         </View>
     )

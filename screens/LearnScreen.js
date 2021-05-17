@@ -5,8 +5,8 @@ const LearnScreen = ({navigation}) => {
     return (
         <View>
 
-        <TouchableOpacity style={{alignItems: 'center', marginBottom:20}}>
-        <Image  onClick={()=>navigation.navigate('Alphabet')}
+        <TouchableOpacity style={{alignItems: 'center', marginBottom:20}}  onPress={()=>navigation.navigate('Alphabet')}>
+        <Image 
             source={require('../assets/image/alphabet.jpeg')}
             style={{height: 100, width:100}}  />   
            <Text>ALPHABET</Text>
