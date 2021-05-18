@@ -1,16 +1,16 @@
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import SoundPlayer from 'react-native-sound-player'
+// import SoundPlayer from 'react-native-sound-player'
 
 
 
 const NumberScreen = ({navigation}) => {
     return (
-        <view>
+        <View>
             <TouchableOpacity>
-            new Player('filename.mp4').play();
+          <Text> new Player('filename.mp4').play(); </Text>
             </TouchableOpacity>
-        </view>
+        </View>
        
     )
 }

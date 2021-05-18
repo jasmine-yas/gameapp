@@ -14,8 +14,8 @@ const LearnScreen = ({navigation}) => {
         </TouchableOpacity>
 
 
-        <TouchableOpacity style={{alignItems: 'center', marginBottom:20}}>
-        <Image  onClick={()=>navigation.navigate('Number')}
+        <TouchableOpacity style={{alignItems: 'center', marginBottom:20}} onPress={()=>navigation.navigate('Number')}>
+        <Image  
             source={require('../assets/image/number.png')}
             style={{height: 100, width:100}}  />   
            <Text>NUMBERS</Text>

@@ -8,8 +8,7 @@ const HomeScreen = ({navigation}) => {
         <View>
             <Button onPress={()=>navigation.navigate('Learn')} title='learn'/>
             
-        
-
+    
             <Button onPress={()=>navigation.navigate('Play')} title='play' />
                 
             
